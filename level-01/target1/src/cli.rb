@@ -2,12 +2,15 @@
 require_relative './application'
 
 # The Main application that will be running your code
+
+
 def main_display
   puts "Please choose the action you would like to perform?" \
   "\n1. Enroll into a department" \
   "\n2. Change your department" \
   "\n3. Change your section" \
-  "\n4. View details"
+  "\n4. View details" \
+  "\n5. Show Departments"
 end
 
 def common_question_1
@@ -73,13 +76,16 @@ loop do
       student_dept = gets.chomp
       section_question_3
       section = gets.chomp
-      puts papplication.section_view student_dept, section
+      puts application.section_view student_dept, section
     when 3
       common_question_1
       student_name = gets.chomp
       puts application.student_details student_name
     end
+  when 5
+    application.show
   end
   puts 'Press any key to go back'
   gets
+ 
 end
