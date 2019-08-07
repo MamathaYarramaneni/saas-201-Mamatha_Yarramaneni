@@ -1,0 +1,60 @@
+*{
+    padding:0px;
+    margin:0px;
+    border:0px;
+}
+#heading{
+    font-size: 60px;
+    color:black;
+    font-weight:bold;
+    margin-top:10px;
+    margin-bottom:30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#enrolling submit  {
+    margin-top:30px;
+    background-color:green;
+    padding:10px 10px 10px 10px;
+    
+}
+#inside{
+    margin-left:20px;
+    margin-right: 20px;
+}
+.button {
+    border-radius: 5px;
+    background-color: rgb(236, 132, 90);
+    border: none;
+    color:white;
+  
+    text-align: center;
+    font-size: 20px;
+  
+    
+    opacity: 0.8;
+   
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    margin-left:10px;
+    margin-top:10px;
+    margin-bottom:20px;
+    margin-right:10px;
+  }
+  .button:hover {opacity: 1}
+  .button1{
+   padding: 15px 10px;
+  }
+  .button2{
+    padding: 15px 25px;
+   }
+   .button3{
+    padding: 15px 80px;
+   }
+   .button4{
+    padding: 15px 100px;
+   }
+  #changingdep{
+    padding-left:30px;
+    padding-right:30px;
+  }
