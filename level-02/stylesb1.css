@@ -1,86 +1,86 @@
 input[type=text], select {
-    width: 100%;
-    padding: 12px 50px;
-    margin: 15px 0;
-    display: inline-block;
-    
-    border-radius: 4px;
-    box-sizing: border-box;
-
-  }
+  width: 100%;
+  padding: 12px 50px;
+  margin: 15px 0;
+  display: inline-block;
   
-  input[type=submit] {
-    
-    background-color: rgb(255, 141, 107);
-    color: white;
-    padding: 14px 20px;
-    margin-top: 10px; 
-    margin-bottom: 20px; 
-    margin-left: 270px; 
-    margin-right:0px; 
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size:15px;
-    
-  }
-  label{
-    font-weight:bold;
-    color:black;
-    margin:0px 10px;
-    font-size:20px;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  input[type=submit]:hover {
-  box-shadow: 2px 3px;}
-  input[type=text]:hover {
+  border-radius: 4px;
+  box-sizing: border-box;
+
+}
+
+input[type=submit] {
+  
+  background-color: rgb(255, 141, 107);
+  color: white;
+  padding: 14px 20px;
+  margin-top: 10px; 
+  margin-bottom: 20px; 
+  margin-left: 270px; 
+  margin-right:0px; 
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size:15px;
+  
+}
+label{
+  font-weight:bold;
+  color:black;
+  margin:0px 10px;
+  font-size:20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+input[type=submit]:hover {
+box-shadow: 2px 3px;}
+input[type=text]:hover {
+border: 1px solid #ccc;
+box-shadow: 2px 3px;
+}
+select:hover{
   border: 1px solid #ccc;
   box-shadow: 2px 3px;
 }
-select:hover{
-    border: 1px solid #ccc;
-    box-shadow: 2px 3px;
-}
-  input[type=submit]:hover {
-    background-color: rgb(255, 108, 64);
-    
-  }
+input[type=submit]:hover {
+  background-color: rgb(255, 108, 64);
   
-  div {
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 20px;
-  }
-  #heading{
-   
-      background: rgb(243, 211, 197);
-    font-size: 35px;
-    color:black;
-    font-weight:bold;
-    margin-top:10px;
-    margin-bottom:30px;
-    font-family: Arial, Helvetica, sans-serif;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+#heading{
+ 
+    background: rgb(243, 211, 197);
+  font-size: 35px;
+  color:black;
+  font-weight:bold;
+  margin-top:10px;
+  margin-bottom:30px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .button {
-    border-radius: 5px;
-    background-color: rgb(223, 219, 219);
-    border: none;
-    color:rgb(75, 72, 72);
-    text-align: center;
-    font-size: 15px;
-    padding:10px 10px;
-    
-    opacity: 0.8;
-   
-    display: inline-block;
-    text-decoration: none;
-    cursor: pointer;
-    margin-left:540px;
-    margin-top:10px;
-   
-    margin-right:10px;
-  }
-  .button:hover {opacity: 1;
-    box-shadow: 2px 3px;
-  }
+  border-radius: 5px;
+  background-color: rgb(223, 219, 219);
+  border: none;
+  color:rgb(75, 72, 72);
+  text-align: center;
+  font-size: 15px;
+  padding:10px 10px;
+  
+  opacity: 0.8;
+ 
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  margin-left:540px;
+  margin-top:10px;
+ 
+  margin-right:10px;
+}
+.button:hover {opacity: 1;
+  box-shadow: 2px 3px;
+}
