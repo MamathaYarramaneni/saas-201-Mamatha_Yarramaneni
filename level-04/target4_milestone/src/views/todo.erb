@@ -1,0 +1,22 @@
+
+<!-- views/todo.erb -->
+<header>
+  <div id='header-left'>
+    <h1><%= @todo %></h1>
+    <h3><%= @date %></h3>
+    <h3>Update Todo!</h3>
+  </div>
+</header>
+
+<section class='todo-container'>
+  <div>
+    <form action="/todos/<%= @id %>" method="POST" class="form">
+      <!-- because he cannot put a put method on our form -->
+      <input type='hidden' name='_method' value='put'>
+      <input type="text" name="title" value="<%= @todo %>"/>
+      <div class='btn-container'>
+        <a class='btn' href='/'>︎Back</a>
+        <input class='btn-submit' type='submit' value='save changes'></div>
+    </form>
+  </div>
+</section>
