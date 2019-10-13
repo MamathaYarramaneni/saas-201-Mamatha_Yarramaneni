@@ -1,0 +1,34 @@
+<% @student.each do |student| %>
+
+<div class="row">
+  <div class="col-md-10">
+    <h2> <%= student.name%></h2>
+  </div>
+</div>
+<br/>
+<div class="row">
+<div class="col-md-2">
+ <label>Department</label>
+</div>
+<div class="col-md-10">
+  <% @department.each do |department|%>
+  <% if department.id==student.department_id %>
+  <p><%= department.name %></p>
+ <% end %>
+ <% end %>
+</div>
+</div>
+<div class="row">
+<div class="col-md-2">
+ <label>Section</label>
+</div>
+<div class="col-md-10">
+  <% @sectionval.each do |section|%>
+  <% if section.id==student.section_id %>
+  <p><%= section.name %></p>
+ <% end %>
+ <% end %>
+</div>
+  <% end %>
+
+
