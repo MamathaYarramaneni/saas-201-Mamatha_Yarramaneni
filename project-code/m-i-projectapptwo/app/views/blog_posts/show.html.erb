@@ -1,0 +1,78 @@
+<% @blogs.each do |blog| %>
+
+<div class="row" style="margin-top:30px;">
+  <div class="col-md-1 float-left ">
+ 	<%= image_tag("yinyang.png", :alt => "rss feed", :size => '55x55') %> 
+    </div>
+  <div class="col-md-10">
+    <h2> <%= blog.title %></h2>   
+  </div>
+</div>
+<br/>
+<div class="card" style="padding: 30px 30px;  background-color: #B9EFF4">
+  <div class="col-md-6">
+    <h2>Description:</h2>
+  </div>
+  </br>
+  <div class="col-md-12" style="font-size:25px;">
+ 
+   <%= blog.content %>
+ 
+  </div>
+ <div class="row">
+  <div class="col-md-2" style="margin-top:30px;">
+  <p class="lead font-weight-bold"> Like here~>
+  </div>
+   <div class="col-md-2" style="margin-top:30px;">
+  <%= form_for(@blog) do |f| %>
+    <%= f.submit text: "update", class: "btn btn-dark" %>
+   <% end %>
+  </p>
+  </div>
+ </div>
+ </div>
+
+<% end %>
+
+
+
+<div class="jumbotron">
+
+ <h2> Comments</h2>  
+<div class="row" style="margin-top:20px">
+  <div class="col-md-9 font-weight-bold">
+    <% @users.each do |user|%> 
+    <% if user.email==current_user.email %>
+     <p><%= user.email %></p>
+     <% end %>
+    <% end %>
+  </div> 
+  <div class="col-md-3">
+   <a class="btn btn-dark btn-lg float-right" href="<%= new_comment_path %>" role="button">New Comment</a>
+  </div>
+</div>
+
+<% @comments.each do |comment| %>
+
+ <div class="row" style="margin-top:30px;">
+  <% @users.each do |user|%>
+  <% if user.id==comment.user_id %>
+ <div class="col-md-12 font-weight-bold">
+  <p><%= user.email %></p>
+ </div>
+ <div class="col-md-10">
+ <%= comment.content %>
+ </div>
+ <% end %>
+ <% end %>
+  
+</div>
+  <% end %>
+
+</div>
+
+
+
+
+
+

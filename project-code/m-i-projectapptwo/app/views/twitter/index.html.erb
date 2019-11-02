@@ -1,0 +1,23 @@
+   <div class="row" style="margin-top:20px">
+    <div class="col-md-1 float-left ">
+ 	<%= image_tag("twit.png", :alt => "rss feed", :size => '55x55') %> 
+    </div>
+    <div class="col-md-10"><h2>My Tweets!</h2></div>
+   
+  </div>
+   </br>
+ <%  @timeline.each do |tweet| %>    
+   <ul class="card" style="background-color: #EBEBEB;font-size:20px; margin-bottom:20px;">
+
+ 
+  <li class="card-body">
+   <div class="col-md-12 " >
+     <%= tweet.text %>
+   </div>
+    <div class="col-md-12 " >
+     <%= tweet.retweet_count %> retweets
+   </div>
+  </li>
+  </ul>
+   <% end %>
+

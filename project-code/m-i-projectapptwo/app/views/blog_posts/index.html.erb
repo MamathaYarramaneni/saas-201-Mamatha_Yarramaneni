@@ -1,0 +1,40 @@
+<div class="row" style="margin-top:20px">
+  <div class="col-md-1 float-left ">
+ 	<%= image_tag("yinyang.png", :alt => "rss feed", :size => '50x50') %> 
+    </div>
+  <div class="col-md-9">
+    <h2>My Blogs!</h2>
+  </div>
+   <% if current_user.admin? %>
+  <div class="col-md-2">
+    <a class="btn btn-dark float-right" href="<%=new_blog_post_path %>" role="button">Create</a>
+  </div>
+   <% end %>
+</div>
+
+<br/>
+
+
+  <% @blogs.each do |blog| %>
+ <ul class="card" style="background-color: #EBEBEB"> 
+  <li class="card-body">
+  <div class="row" style="margin-top:20px">
+
+  <div class="col-md-10">
+  <a href="<%= blog_post_path(id: blog.id)%>"><%= blog.title %></a>
+  </div>
+
+  <div class="col-md-2">
+  <% if blog.likes.nil? %>
+      0 likes
+  <% else %>
+  <%= blog.likes %> likes
+  <% end %>
+  </div>
+
+  </div>
+  </li>
+  </ul>
+  <% end %>
+  
+
